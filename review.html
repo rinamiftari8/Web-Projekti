@@ -17,7 +17,8 @@
             align-items: flex-start;
             height: 100vh;
         }
-         .container {
+
+        .container {
             width: 80%;
             max-width: 1000px;
             background-color: #fff;
@@ -89,8 +90,50 @@
         .university-list li a:hover {
             color: #f5a425;
         }
+
+        .review-section {
+            margin-top: 40px;
+        }
+
+        .review-section h3 {
+            font-size: 24px;
+            color: #f5a425;
+            margin-bottom: 10px;
+        }
+
+        .review-section p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .review-textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-review-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #f5a425;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-review-btn:hover {
+            background-color: #e48d1f;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Profile Header -->
@@ -117,6 +160,15 @@
                 <li><a href="https://www.brown.edu" target="_blank">Brown University</a></li>
             </ul>
         </div>
+
+        <!-- Review Section -->
+        <div class="review-section">
+            <h3>Write a Review to the Community</h3>
+            <p>We value your opinion! Please share your thoughts, experiences, or advice for future students.</p>
+            <textarea class="review-textarea" placeholder="Write your review here..."></textarea>
+            <button class="submit-review-btn">Submit Review</button>
+        </div>
     </div>
 </body>
+
 </html>
